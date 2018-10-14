@@ -1,3 +1,95 @@
-<p>
-  form works!
-</p>
+<div class="form-container">
+  Contact Form
+</div>
+
+ <form class="contactForm" (ngSubmit)="submit()" #contactForm="ngForm">
+  <table class="fullwidth" cellspacing="0">
+   <!-- <tr>
+      <td>
+        <mat-form-field class="full-width">
+          <input matInput
+                 id="id"
+                 name="id"
+                 placeholder="Enter Id"
+                 [(ngModel)]="contact.id">
+        </mat-form-field>
+      </td>
+    </tr>-->
+    <tr>
+      <td>
+        <mat-form-field class="full-width">
+          <input matInput
+                 id="firstName"
+                 name="firstName"
+                 placeholder="First Name"
+                 value="First Name"
+                 [(ngModel)]="contact.firstName">
+        </mat-form-field>
+      </td>
+
+      <td>
+        <mat-form-field class="full-width">
+          <input matInput
+                 id="lastName"
+                 name="lastName"
+                 placeholder="Last Name"
+                 value="Last Name"
+                [(ngModel)]="contact.lastName">
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <mat-form-field class="full-width">
+          <input matInput
+                 id="address"
+                 name="addresss"
+                 placeholder="Address"
+                 value="Address"
+                 [(ngModel)]="contact.address">
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <mat-form-field class="full-width">
+          <input matInput
+                 id="city"
+                 name="citys"
+                 placeholder="City"
+                 value="city"
+                 [(ngModel)]="contact.city">
+        </mat-form-field>
+      </td>
+
+      <td>
+        <mat-form-field class="full-width">
+          <input matInput
+                 id="state"
+                 name="states"
+                 placeholder="State"
+                 value="state"
+                 [(ngModel)]="contact.state">
+        </mat-form-field>
+      </td>
+
+      <td>
+        <mat-form-field class="full-width">
+          <input matInput
+                 id="zipCode"
+                 name="zipCodes"
+                 placeholder="Zip Code"
+                 value="zipCode"
+                 [(ngModel)]="contact.zipCode">
+        </mat-form-field>
+      </td>
+    </tr>
+  </table>
+  <p>
+    <button type="submit" md-raised-button>Submit</button>
+  </p>
+</form>
+
+<pre>
+  {{contact|json}}
+</pre>
