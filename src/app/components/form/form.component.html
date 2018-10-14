@@ -4,7 +4,7 @@
 
  <form class="contactForm" (ngSubmit)="submit()" #contactForm="ngForm">
   <table class="fullwidth" cellspacing="0">
-    <tr>
+   <!-- <tr>
       <td>
         <mat-form-field class="full-width">
           <input matInput
@@ -14,14 +14,14 @@
                  [(ngModel)]="contact.id">
         </mat-form-field>
       </td>
-    </tr>
+    </tr>-->
     <tr>
       <td>
         <mat-form-field class="full-width">
           <input matInput
                  id="firstName"
                  name="firstName"
-                 placeholder="First tName"
+                 placeholder="First Name"
                  value="First Name"
                  [(ngModel)]="contact.firstName">
         </mat-form-field>
@@ -56,7 +56,7 @@
           <input matInput
                  id="city"
                  name="citys"
-                 placeholder="city"
+                 placeholder="City"
                  value="city"
                  [(ngModel)]="contact.city">
         </mat-form-field>
@@ -67,7 +67,7 @@
           <input matInput
                  id="state"
                  name="states"
-                 placeholder="state"
+                 placeholder="State"
                  value="state"
                  [(ngModel)]="contact.state">
         </mat-form-field>
@@ -78,7 +78,7 @@
           <input matInput
                  id="zipCode"
                  name="zipCodes"
-                 placeholder="zipCode"
+                 placeholder="Zip Code"
                  value="zipCode"
                  [(ngModel)]="contact.zipCode">
         </mat-form-field>
