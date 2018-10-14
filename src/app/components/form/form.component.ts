@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {SimpleContact} from '../../models/SimpleContact';
 
 @Component({
   selector: 'app-form',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  constructor() { }
+  contact: SimpleContact;
+  constructor() {
+  }
 
   ngOnInit() {
+    this.contact = new SimpleContact();
+  }
+
+  public submit(){
+    alert('Contact \n' + JSON.stringify(this.contact));
   }
 
 }

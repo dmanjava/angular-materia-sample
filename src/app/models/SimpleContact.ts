@@ -1,5 +1,5 @@
 export class SimpleContact {
-  constructor(fid?: string,
+  constructor(id?: string,
               firstName?: string,
               lastName?: string,
               address?: string,
